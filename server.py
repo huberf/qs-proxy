@@ -54,6 +54,15 @@ def note(auth_input, text):
     else:
         return '{"success": "false"}'
 
+# Nomie 3 Webhooks Saver
+@app.route('/nomie3/data')
+def nomie3Saver():
+    success = True
+    if success:
+        return '{"success": "true"}'
+    else:
+        return '{"success": "false"}'
+
 @app.route("/secure", methods=['POST'])
 def parse_request():
     # Preparing for future developments
